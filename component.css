@@ -1,0 +1,22 @@
+.header__img {
+    height: 4rem;
+    display: block;
+    width: auto;
+}
+.header__writeUp {
+    color: var(--color-primary);
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation__link {
+    color: var(--color-grey-dark);
+    text-transform: uppercase;
+}
+
+.navigation__link:hover {
+    color: var(--color-primary);
+}

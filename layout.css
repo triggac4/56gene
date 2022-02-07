@@ -1,0 +1,28 @@
+.root {
+    max-width: 144rem;
+}
+
+.root {
+    display: grid;
+    grid-template-columns:
+        [start]minmax(5rem, 1fr) [main-start]repeat(10, 1fr) [main-end] minmax(
+            5rem,
+            1fr
+        )
+        [end];
+    grid-auto-rows: min-content;
+}
+
+.header {
+    grid-column: main-start/main-end;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__main {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 25rem;
+}
