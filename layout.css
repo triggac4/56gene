@@ -73,3 +73,18 @@
     text-align: center;
     gap: 2rem;
 }
+
+.faqs-policy {
+    grid-column: main-start/main-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 5rem 0;
+}
+.faqs-policy__writeUp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
