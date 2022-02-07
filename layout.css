@@ -44,3 +44,15 @@
     justify-content: center;
     align-items: flex-start;
 }
+
+.team {
+    grid-column: main-start/main-end;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
+.learn-more {
+}
