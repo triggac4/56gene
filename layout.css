@@ -43,11 +43,109 @@
         top: 0;
     }
 }
-
+.navigation-opener {
+    display: none;
+}
 @media screen and (max-width: 43.75em) {
     .navigation {
         position: fixed;
+        transition: all 0.5s;
         top: -100%;
+        left: 0;
+        width: 100%;
+    }
+    .navigation-opener {
+        width: 5rem;
+        height: 5rem;
+        position: fixed;
+        top: 1rem;
+        left: 2rem;
+        z-index: 10;
+        background-color: var(--color-primary);
+        box-shadow: 2px 2px 2px var(--color-grey-dark);
+        transition: all 0.5s;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .input {
+        display: none;
+    }
+
+    .label__sign {
+        height: 3px;
+        background-color: var(--color-white);
+        width: 4rem;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+    .label__sign::before {
+        transform: translateY(-10px);
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: var(--color-white);
+        width: 4rem;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+    .label__sign::after {
+        transform: translateY(8px);
+        transform-origin: center;
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: var(--color-white);
+        width: 4rem;
+        transition: all 0.5s;
+    }
+
+    input:checked + .navigation-opener > label > .label__sign {
+        background-color: transparent;
+    }
+    input:checked + .navigation-opener > label .label__sign::before {
+        transform: translateX(0) rotate(-45deg);
+        background-color: var(--color-grey-dark);
+    }
+    input:checked + .navigation-opener > label .label__sign::after {
+        transform: translateX(-1px) rotate(45deg);
+        background-color: var(--color-grey-dark);
+    }
+    input:checked + .navigation-opener {
+        background-color: var(--color-white);
+        box-shadow: none;
+    }
+    input:checked ~ .navigation {
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 7rem 7rem;
+
+        background-color: var(--color-white);
+        z-index: 5;
+        gap: 2rem;
+
+        /* .navigation__link {
+            color: var(--color-grey-dark);
+            text-transform: capitalize;
+            font-size: 2rem;
+        } */
+    }
+    .header__main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+    .header {
+        grid-column: start/end;
+        position: static;
     }
 }
 
