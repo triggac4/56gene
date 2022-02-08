@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 22.5em) {
     .root {
-        grid-template-columns: [start]1fr [main-start]repeat(10, 1fr) [main-end] 1fr[end];
+        grid-template-columns: [start]0 [main-start]repeat(10, 1fr) [main-end] 0[end];
     }
 }
 .header {
