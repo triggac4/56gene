@@ -14,6 +14,11 @@
     grid-auto-rows: min-content;
 }
 
+@media screen and (max-width: 22.5em) {
+    .root {
+        grid-template-columns: [start]1fr [main-start]repeat(10, 1fr) [main-end] 1fr[end];
+    }
+}
 .header {
     grid-column: start/end;
     height: 7rem;

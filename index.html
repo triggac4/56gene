@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="root">
-            <header class="header">
+            <header class="header" id="header">
                 <div class="header__main">
                     <img
                         src="./images/power.png"
@@ -30,15 +30,17 @@
                     </label>
                 </div>
                 <nav class="navigation">
-                    <a class="navigation__link">app</a>
-                    <a class="navigation__link">team</a>
-                    <a class="navigation__link">learn more</a>
-                    <a class="navigation__link">blog</a>
-                    <a class="navigation__link">contact</a>
+                    <a class="navigation__link" href="#header">app</a>
+                    <a class="navigation__link" href="#team">team</a>
+                    <a class="navigation__link" href="#learn-more"
+                        >learn more</a
+                    >
+                    <a class="navigation__link" href="#faqs-policy">blog</a>
+                    <a class="navigation__link" href="#connect">contact</a>
                 </nav>
             </header>
             <div class="divider"></div>
-            <section class="homepage">
+            <section class="homepage" id="homepage">
                 <img
                     src="./images/SwipePage-smallToScale_wylhid.png"
                     alt="phone-image"
@@ -66,7 +68,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section class="team">
+            <section class="team" id="team">
                 <h2 class="team__heading">About the team.</h2>
                 <p class="team__paragraph">
                     We've put together the best team that we could find to give
@@ -76,7 +78,7 @@
                 </p>
             </section>
             <div class="divider"></div>
-            <section class="learn-more">
+            <section class="learn-more" id="learn-more">
                 <div class="learn-more__header">
                     <h2>Want to Learn More?</h2>
                     <h3>Take a look at the articles written about us</h3>
@@ -139,7 +141,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section class="faqs-policy">
+            <section class="faqs-policy" is="faqs-policy">
                 <h2 class="faqs-policy__heading">FAQs and Policies</h2>
                 <div class="faqs-policy__writeUp">
                     <div class="faqs-policy__item">
@@ -159,7 +161,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <section class="connect">
+            <section class="connect" id="connect">
                 <h2 class="connect__header">Connect With Us On:</h2>
                 <div class="connect__body">
                     <figure class="connect__img-container">
@@ -182,7 +184,7 @@
                 </div>
             </section>
             <div class="divider"></div>
-            <footer class="footer">
+            <footer class="footer" id="footer">
                 <div class="footer__img-body">
                     <figure class="footer__img-container facebook">
                         <img
