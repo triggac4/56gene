@@ -31,6 +31,26 @@
     width: 25rem;
 }
 
+@media screen and (max-width: 53.125em) {
+    .header {
+        grid-column: start/end;
+        height: 7rem;
+        padding: 0 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 43.75em) {
+    .navigation {
+        position: fixed;
+        top: -100%;
+    }
+}
+
 .homepage {
     grid-column: start/end;
     height: 130vh;
@@ -45,7 +65,23 @@
     justify-content: center;
     align-items: flex-start;
 }
-
+@media screen and (max-width: 46.25em) {
+    .homepage {
+        flex-direction: column;
+        height: 150rem;
+        padding: 0 5rem;
+    }
+}
+@media screen and (max-width: 41.8em) {
+    .homepage {
+        height: 120rem;
+    }
+}
+@media screen and (max-width: 28.125em) {
+    .homepage {
+        height: 100rem;
+    }
+}
 .team {
     grid-column: main-start/main-end;
     padding: 5rem 0;
@@ -67,6 +103,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (max-width: 49.375em) {
+    .learn-more__plans-list {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 .learn-more__list-items {
     display: flex;
     flex-direction: column;
@@ -97,9 +140,25 @@
     align-items: center;
     gap: 4rem;
 }
+.connect__body {
+    display: flex;
+    justify-content: space-around;
+    gap: 25rem;
+}
+@media screen and (max-width: 49.375em) {
+    .connect__body {
+        gap: 10rem;
+    }
+}
+@media screen and (max-width: 35em) {
+    .connect__body {
+        gap: 5rem;
+    }
+}
+
 .footer {
     grid-column: main-start/main-end;
-    margin-top: 5rem;
+    margin: 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;

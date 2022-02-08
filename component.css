@@ -1,5 +1,6 @@
 .header {
     background-color: white;
+    border-bottom: 1px solid var(--color-grey-dark);
 }
 
 .header__img {
@@ -18,7 +19,8 @@
 
 .navigation__link {
     color: var(--color-grey-dark);
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-size: 2rem;
 }
 
 .navigation__link:hover {
@@ -35,6 +37,7 @@
 .homepage__phoneimage {
     height: 80%;
 }
+
 .homepage__writeUp {
     width: 50%;
 }
@@ -53,6 +56,30 @@
 .homepage__appstore-linkImg {
     width: 80%;
 }
+@media screen and (max-width: 46.25em) {
+    .homepage__phoneimage {
+        height: auto;
+        width: 80%;
+    }
+    .homepage__writeUp {
+        width: 100%;
+    }
+    .homepage__appstore-linkImg {
+        width: 100%;
+    }
+    .homepage__writeUp-header h2 {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+    .homepage__writeUp-header h3 {
+        font-size: 3rem;
+    }
+    .homepage__writeUp-paragraph {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
 
 .team__heading {
     color: var(--color-primary);
@@ -61,7 +88,14 @@
 .team__paragraph {
     font-size: 2.4rem;
 }
-
+@media screen and (max-width: 35em) {
+    .team__heading {
+        font-size: 3rem;
+    }
+    .team__paragraph {
+        font-size: 2rem;
+    }
+}
 .learn-more__header {
     display: flex;
     flex-direction: column;
@@ -93,7 +127,14 @@
     font-size: 1.8rem;
     color: var(--color-grey-dark);
 }
-
+@media screen and (max-width: 35em) {
+    .learn-more__header h2 {
+        font-size: 3rem;
+    }
+    .learn-more__header h3 {
+        font-size: 2rem;
+    }
+}
 .faqs-policy__heading {
     font-size: 3.7rem;
     font-weight: 300;
@@ -110,6 +151,31 @@
     font-size: 3.4rem;
     font-weight: 300;
 }
+.faqs-policy__item-date {
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 35em) {
+    .faqs-policy__heading {
+        font-size: 3rem;
+        font-weight: 300;
+        color: var(--color-primary);
+    }
+
+    .faqs-policy__writeUp {
+        font-size: 2.4rem;
+        font-weight: 300;
+        gap: 1rem;
+        color: var(--color-grey-dark);
+    }
+
+    .faqs-policy__item-header {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .faqs-policy__item-date {
+        font-size: 1.4rem;
+    }
+}
 
 .connect {
     margin: 5rem 0;
@@ -119,11 +185,7 @@
     font-weight: 300;
     color: var(--color-primary);
 }
-.connect__body {
-    display: flex;
-    justify-content: space-around;
-    gap: 25rem;
-}
+
 .connect__img-container {
     display: flex;
     flex-direction: column;
@@ -131,6 +193,15 @@
     font-size: 2.4rem;
     color: var(--color-grey-dark);
 }
+@media screen and (max-width: 35em) {
+    .connect__header {
+        font-size: 3rem;
+    }
+    .connect__img-container {
+        font-size: 2rem;
+    }
+}
+
 .footer__img-body {
     height: 2.5rem;
     display: flex;
