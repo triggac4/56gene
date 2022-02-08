@@ -105,3 +105,29 @@
     gap: 1rem;
     color: var(--color-grey-dark);
 }
+
+.faqs-policy__item-header {
+    font-size: 3.4rem;
+    font-weight: 300;
+}
+
+.connect {
+    margin: 5rem 0;
+}
+.connect__header {
+    font-size: 3.7rem;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+.connect__body {
+    display: flex;
+    justify-content: space-around;
+    gap: 25rem;
+}
+.connect__img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.4rem;
+    color: var(--color-grey-dark);
+}
